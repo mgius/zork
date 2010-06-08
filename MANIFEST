@@ -1,0 +1,49 @@
+   File Name		Archive #	Description
+-----------------------------------------------------------
+ History                   11	Some revision history notes
+ MANIFEST                   1	This shipping list
+ Makefile                   4	Makefile
+ Makefile.MSC              12	Makefile for MS-DOS and Microsoft C
+ README                     1	general information
+ actors.c                  11	character processors
+ ballop.c                  12	balloon processor
+ clockr.c                   8	clock event processors
+ demons.c                   9	demon processors
+ dgame.c                   11	main routine
+ dinit.c                   10	initialization routine
+ dmain.c                    1	program root
+ dso1.c                    12	overlaid subroutines, part 1
+ dso2.c                     9	overlaid subroutines, part 2
+ dso3.c                    11	overlaid subroutines, part 3
+ dso4.c                    12	overlaid subroutines, part 4
+ dso5.c                    12	overlaid subroutines, part 5
+ dso6.c                    12	overlaid subroutines, part 6
+ dso7.c                     2	overlaid subroutines, part 7
+ dsub.c                    10	resident subroutines
+ dtextc.uu1                 3	data base, part 1 [uuencoded binary]
+ dtextc.uu2                 4	data base, part 2 [uuencoded binary]
+ dtextc.uu3                 2	data base, part 3 [uuencoded binary]
+ dtextc.uu4                 1	data base, part 4 [uuencoded binary]
+ dungeon.6                 11	man page
+ dverb1.c                   7	auxiliary verbs, part 1
+ dverb2.c                   9	auxiliary verbs, part 2
+ funcs.h                    3	header file with function prototypes
+ gdt.c                      5	game debugging tool
+ lightp.c                  12	light processors
+ local.c                   12	hooks for local definition
+ nobjs.c                    7	new objects
+ np.c                      10	parser, part 0
+ np1.c                     11	parser, part 1
+ np2.c                     11	parser, part 2
+ np3.c                     10	parser, part 3
+ nrooms.c                  10	new room processors
+ objcts.c                   6	principal objects
+ parse.h                    5	header file for parsing routines
+ rooms.c                    8	room processors
+ sobjs.c                    7	simple objects
+ supp.c                    11	support routines and more processing
+ sverbs.c                   9	simple verbs
+ vars.h                     1	header file with variable definitions
+ verbs.c                    6	principal verbs
+ villns.c                   8	villain processors
+
