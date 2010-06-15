@@ -228,4 +228,3 @@ void more_input()
 {
     coutput = 0;
 }
-

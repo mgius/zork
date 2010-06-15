@@ -869,4 +869,3 @@ L27600:
     return ret_val;
 
 } /* sverbs_ */
-

@@ -112,4 +112,3 @@ to remove the FORTRAN I/O library, to add simple more processing, and
 to change the format of the database file.  Andre Srinivasan
 (andre@cs.pitt.edu) help test it.  Jonathan Mark
 (uunet!microsoft!jonm) made it work under MS-DOS and Microsoft C.
-

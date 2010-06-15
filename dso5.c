@@ -186,4 +186,3 @@ L100:
     }
     return ret_val;
 } /* weight_ */
-

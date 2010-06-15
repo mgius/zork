@@ -259,4 +259,3 @@ integer n;
     }
     return ret_val;
 } /* xvehic_ */
-

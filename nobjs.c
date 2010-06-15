@@ -941,4 +941,3 @@ L600:
     return ret_val;
 
 } /* mirpan_ */
-

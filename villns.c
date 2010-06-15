@@ -526,4 +526,3 @@ L10:
     ret_val = FALSE_;
     return ret_val;
 } /* thiefp_ */
-

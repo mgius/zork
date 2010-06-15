@@ -313,4 +313,3 @@ L500:
     ret_val = TRUE_;
     return ret_val;
 } /* thisit_ */
-

@@ -686,4 +686,3 @@ L14500:
     return ret_val;
 
 } /* cxappl_ */
-

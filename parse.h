@@ -692,4 +692,3 @@ EXTERN const integer ovoc[]
 	;
 
 #endif
-

@@ -1138,4 +1138,3 @@ L62300:
     return ret_val;
 
 } /* oappli_ */
-

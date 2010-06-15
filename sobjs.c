@@ -1021,4 +1021,3 @@ L56100:
     return ret_val;
 
 } /* sobjs_ */
-

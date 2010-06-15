@@ -203,4 +203,3 @@ L300:
     return ret_val;
 
 } /* yesno_ */
-

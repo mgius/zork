@@ -786,4 +786,3 @@ L47000:
 } /* gdt_ */
 
 #endif /* ALLOW_GDT */
-

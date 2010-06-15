@@ -79,4 +79,3 @@ logical wizard()
 }
 
 #endif
-

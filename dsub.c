@@ -626,4 +626,3 @@ integer ri;
 /* 						!IF NEW, PROCESSOR 2. */
     return ret_val;
 } /* rappli_ */
-

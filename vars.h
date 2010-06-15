@@ -415,4 +415,3 @@ EXTERN const struct {
 #define bats_1 bats_
 
 #endif
-

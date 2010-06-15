@@ -186,4 +186,3 @@ L100:
     state_1.egscor += n;
 /* 						!UPDATE EG SCORE. */
 } /* scrupd_ */
-

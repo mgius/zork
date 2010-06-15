@@ -162,4 +162,3 @@ L100:
     }
 /* 						!WEST LADDER? */
 } /* cpinfo_ */
-
