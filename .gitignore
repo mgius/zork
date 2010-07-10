@@ -1,0 +1,7 @@
+*.o
+a.out
+dungeon
+dtextc.dat
+*anjuta*
+*.swp
+TODO.tasks
