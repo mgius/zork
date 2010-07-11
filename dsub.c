@@ -60,15 +60,13 @@ integer s2;
 static void rspsb2nl_(integer n, integer y, integer z, integer nl)
 {
    const char *zkey = "IanLanceTaylorJr";
-   long x;
-
-   x = (long)n;
+   long x = (long)n;
 
    if (x > 0) {
       x = rmsg_1.rtext[x - 1];
    }
    /* 						!IF >0, LOOK UP IN RTEXT. */
-   if (x == 0) {
+   else if (x == 0) {
       return;
    }
    /* 						!ANYTHING TO DO? */
@@ -76,10 +74,12 @@ static void rspsb2nl_(integer n, integer y, integer z, integer nl)
    /* 						!SAID SOMETHING. */
 
    x = ((- x) - 1) * 8;
+#ifdef DEBUG
    if (fseek(dbfile, x + (long)rmsg_1.mrloc, SEEK_SET) == EOF) {
       fprintf(stderr, "Error seeking database loc %d\n", x);
       exit_();
    }
+#endif
 
    if (nl)
       more_output(NULL);
@@ -88,10 +88,12 @@ static void rspsb2nl_(integer n, integer y, integer z, integer nl)
       integer i;
 
       i = getc(dbfile);
+#ifdef DEBUG
       if (i == EOF) {
          fprintf(stderr, "Error reading database loc %d\n", x);
          exit_();
       }
+#endif
       i ^= zkey[x & 0xf] ^ (x & 0xff);
       x = x + 1;
       if (i == '\0')
@@ -106,10 +108,12 @@ static void rspsb2nl_(integer n, integer y, integer z, integer nl)
 
          iloc = ftell(dbfile);
          rspsb2nl_(y, 0, 0, 0);
+#ifdef DEBUG
          if (fseek(dbfile, iloc, SEEK_SET) == EOF) {
             fprintf(stderr, "Error seeking database loc %d\n", iloc);
             exit_();
          }
+#endif
          y = z;
          z = 0;
       }
@@ -152,6 +156,7 @@ logical objact_()
 
 void bug_(integer a, integer b)
 {
+#ifdef DEBUG
 
    /* Local variables */
 
@@ -162,6 +167,7 @@ void bug_(integer a, integer b)
       return;
    }
    exit_();
+#endif
 
 } /* bug_ */
 
@@ -240,9 +246,11 @@ void jigsup_(integer desc)
    /* 						!DESCRIBE SAD STATE. */
    prsvec_1.prscon = 1;
    /* 						!STOP PARSER. */
+#ifdef DEBUG
    if (debug_1.dbgflg != 0) {
       return;
    }
+#endif
    /* 						!IF DBG, EXIT. */
    advs_1.avehic[play_1.winner - 1] = 0;
    /* 						!GET RID OF VEHICLE. */
@@ -395,7 +403,9 @@ integer oactor_(integer obj)
       /* 						!FOUND IT? */
       /* L100: */
    }
+#ifdef DEBUG
    bug_(40, obj);
+#endif
    /* 						!NO, DIE. */
    return advs_1.alnt + 1;
 } /* oactor_ */

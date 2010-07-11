@@ -14,13 +14,13 @@ int main(argc, argv)       /* void changed to int, Volker Blasius, 11jul93 */
 int argc;
 char **argv;
 {
-/* 1) INITIALIZE DATA STRUCTURES */
-/* 2) PLAY GAME */
+   /* 1) INITIALIZE DATA STRUCTURES */
+   /* 2) PLAY GAME */
 
-    if (init_()) {
-	game_();
-    }
-/* 						!IF INIT, PLAY GAME. */
-    exit_();
-/* 						!DONE */
+   if (init_()) {
+      game_();
+   }
+   /* 						!IF INIT, PLAY GAME. */
+   exit_();
+   /* 						!DONE */
 } /* MAIN__ */
