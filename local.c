@@ -60,7 +60,7 @@ logical protected()
  */
 
 #ifndef WIZARDID
-#define WIZARDID (1000)
+#define WIZARDID (0)
 #endif
 
 logical wizard()

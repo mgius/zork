@@ -40,7 +40,7 @@ LIBS = -lcurses
 # Uncomment the following line if you want to have access to the game
 # debugging tool.  This is invoked by typing "gdt".  It is not much
 # use except for debugging.
-GDTFLAG = -DALLOW_GDT
+# GDTFLAG = -DALLOW_GDT
 
 # Compilation flags
 # CFLAGS = -g -DDEBUG
