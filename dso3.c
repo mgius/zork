@@ -48,9 +48,11 @@ logical findxt_(integer dir, integer rm)
          if ((i & xpars_1.xdmask) == dir) {
             return ret_val;
          }
+	 break;
+      default:
+	  /* 						!BRANCH ON ENTRY. */
+	  bug_(10, curxt_1.xtype);
       }
-      /* 						!BRANCH ON ENTRY. */
-      bug_(10, curxt_1.xtype);
 
       /* 						!DOOR/CEXIT/NEXIT - STRING. */
    } while ((i & xpars_1.xlflag) == 0);

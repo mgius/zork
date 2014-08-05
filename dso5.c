@@ -158,12 +158,14 @@ integer weight_(integer rm, integer cn, integer ad)
          j = objcts_1.ocan[j - 1];
          /* 						!GET NEXT LEVEL UP. */
          if (j == 0) {
-            continue;
+            goto L51;
          }
          /* 						!END OF LIST? */
       } while (j != cn);
 L50:
       ret_val += objcts_1.osize[i - 1];
+L51:
+      (void)ret_val;
    }
    return ret_val;
 } /* weight_ */

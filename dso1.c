@@ -122,12 +122,13 @@ integer adv;
          }
          /* 						!IF NOT EMPTY, LIST. */
       }
+   } else {
+       /* 						!ANY OBJECTS? */
+       if (adv == aindex_1.player) {
+	  rspeak_(578);
+       }
+       /* 						!NO, TELL HIM. */
    }
-   /* 						!ANY OBJECTS? */
-   if (adv == aindex_1.player) {
-      rspeak_(578);
-   }
-   /* 						!NO, TELL HIM. */
    return;
 } /* invent_ */
 
