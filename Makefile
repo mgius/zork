@@ -1,5 +1,6 @@
 # Makefile for dungeon
 
+CC = gcc
 # Where to install the program
 BINDIR = /usr/games
 
@@ -42,7 +43,8 @@ LIBS = -lcurses
 # GDTFLAG = -DALLOW_GDT
 
 # Compilation flags
-CFLAGS = -O
+# CFLAGS = -g -DDEBUG
+CFLAGS = -O3
 # On SCO Unix Development System 3.2.2a, the const type qualifier does
 # not work correctly when using cc.  The following line will cause it
 # to not be used and should be uncommented.

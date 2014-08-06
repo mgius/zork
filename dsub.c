@@ -59,6 +59,7 @@ integer s2;
 
 static void rspsb2nl_(integer n, integer y, integer z, integer nl)
 {
+   int res;
    const char *zkey = "IanLanceTaylorJr";
    long x = (long)n;
 
@@ -74,8 +75,9 @@ static void rspsb2nl_(integer n, integer y, integer z, integer nl)
    /* 						!SAID SOMETHING. */
 
    x = ((- x) - 1) * 8;
+   res = fseek(dbfile, x + (long)rmsg_1.mrloc, SEEK_SET);
 #ifdef DEBUG
-   if (fseek(dbfile, x + (long)rmsg_1.mrloc, SEEK_SET) == EOF) {
+   if (res == EOF) {
       fprintf(stderr, "Error seeking database loc %d\n", x);
       exit_();
    }
@@ -108,8 +110,9 @@ static void rspsb2nl_(integer n, integer y, integer z, integer nl)
 
          iloc = ftell(dbfile);
          rspsb2nl_(y, 0, 0, 0);
+	 res = fseek(dbfile, iloc, SEEK_SET);
 #ifdef DEBUG
-         if (fseek(dbfile, iloc, SEEK_SET) == EOF) {
+         if (res == EOF) {
             fprintf(stderr, "Error seeking database loc %d\n", iloc);
             exit_();
          }
