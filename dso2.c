@@ -8,7 +8,10 @@
 #include "funcs.h"
 #include "vars.h"
 
-logical moveto_(integer nr, integer who)
+logical
+moveto_(nr, who)
+integer nr;
+integer who;
 {
    /* System generated locals */
    logical ret_val;
@@ -72,7 +75,7 @@ L100:
    }
    /* 						!IN BUCKET? */
    nlv = (rooms_1.rflag[nr - 1] & bits) == 0;
-   // Don't change this goto without looking at compiled size very carefully
+   /* Don't change this goto without looking at compiled size very carefully */
    if (! lnr && nlv || lnr && lhr && nlv && bits != RLAND) {
       goto L800;
    }
@@ -87,7 +90,8 @@ L800:
 
 /* DECLARATIONS */
 
-void score_(logical flg)
+void score_(flg)
+logical flg;
 {
    /* Initialized data */
 
@@ -141,7 +145,8 @@ void score_(logical flg)
 
 /* DECLARATIONS */
 
-void scrupd_(integer n)
+void scrupd_(n)
+integer n;
 {
    if (findex_1.endgmf) {
       state_1.egscor += n;

@@ -57,7 +57,11 @@ integer s2;
 
 /* rspsb2nl_ Display a substitutable message with an optional newline */
 
-static void rspsb2nl_(integer n, integer y, integer z, integer nl)
+static void rspsb2nl_(n, y, z, nl)
+integer n;
+integer y;
+integer z;
+integer nl;
 {
    int res;
    const char *zkey = "IanLanceTaylorJr";
@@ -157,7 +161,9 @@ logical objact_()
 
 /* 	CALL BUG(NO,PAR) */
 
-void bug_(integer a, integer b)
+void bug_(a, b)
+integer a;
+integer b;
 {
 #ifdef DEBUG
 
@@ -180,7 +186,12 @@ void bug_(integer a, integer b)
 
 /* 	CALL NEWSTA(OBJECT,STRING,NEWROOM,NEWCON,NEWADV) */
 
-void newsta_(integer o, integer r, integer rm, integer cn, integer ad)
+void newsta_(o, r, rm, cn, ad)
+integer o;
+integer r;
+integer rm;
+integer cn;
+integer ad;
 {
    rspeak_(r);
    objcts_1.oroom[o - 1] = rm;
@@ -192,7 +203,9 @@ void newsta_(integer o, integer r, integer rm, integer cn, integer ad)
 
 /* DECLARATIONS */
 
-logical qhere_(integer obj, integer rm)
+logical qhere_(obj, rm)
+integer obj;
+integer rm;
 {
    /* Local variables */
    integer i;
@@ -215,7 +228,8 @@ logical qhere_(integer obj, integer rm)
 
 /* DECLARATIONS */
 
-logical qempty_(integer obj)
+logical qempty_(obj)
+integer obj;
 {
    /* Local variables */
    integer i;
@@ -234,7 +248,8 @@ logical qempty_(integer obj)
 
 /* DECLARATIONS */
 
-void jigsup_(integer desc)
+void jigsup_(desc)
+integer desc;
 {
    /* Initialized data */
 
@@ -390,7 +405,8 @@ L1100:
 
 /* DECLARATIONS */
 
-integer oactor_(integer obj)
+integer oactor_(obj)
+integer obj;
 {
    /* System generated locals */
 
@@ -417,7 +433,9 @@ integer oactor_(integer obj)
 
 /* DECLARATIONS */
 
-logical prob_(integer g, integer b)
+logical prob_(g, b)
+integer g;
+integer b;
 {
    /* System generated locals */
 
@@ -551,7 +569,8 @@ L600:
 
 /* DECLARATIONS */
 
-logical rappli_(integer ri)
+logical rappli_(ri)
+integer ri;
 {
    /* Initialized data */
 

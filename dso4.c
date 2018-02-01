@@ -7,7 +7,11 @@
 #include "funcs.h"
 #include "vars.h"
 
-integer robadv_(integer adv, integer nr, integer nc, integer na)
+integer robadv_(adv, nr, nc, na)
+integer adv;
+integer nr;
+integer nc;
+integer na;
 {
    /* System generated locals */
    integer ret_val;
@@ -33,7 +37,12 @@ integer robadv_(integer adv, integer nr, integer nc, integer na)
 
 /* DECLARATIONS */
 
-integer robrm_(integer rm, integer pr, integer nr, integer nc, integer na)
+integer robrm_(rm, pr, nr, nc, na)
+integer rm;
+integer pr;
+integer nr;
+integer nc;
+integer na;
 {
    /* System generated locals */
    integer ret_val;
@@ -69,7 +78,9 @@ integer robrm_(integer rm, integer pr, integer nr, integer nc, integer na)
 
 /* DECLARATIONS */
 
-logical winnin_(integer vl, integer hr)
+logical winnin_(vl, hr)
+integer vl;
+integer hr;
 {
    /* System generated locals */
    logical ret_val;
@@ -107,7 +118,9 @@ logical winnin_(integer vl, integer hr)
 
 /* DECLARATIONS */
 
-integer fights_(integer h, logical flg)
+integer fights_(h, flg)
+integer h;
+logical flg;
 {
    /* Initialized data */
 
@@ -129,10 +142,11 @@ integer fights_(integer h, logical flg)
 
 /* DECLARATIONS */
 
-integer vilstr_(integer v)
+integer vilstr_(v)
+integer v;
 {
    /* System generated locals */
-   integer ret_val, i__1, i__2, i__3;
+   integer ret_val, i__2, i__3;
 
    /* Local variables */
    integer i;
