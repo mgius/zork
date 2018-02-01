@@ -324,7 +324,8 @@ L1000:
 
 /* VALUAC- HANDLES VALUABLES/EVERYTHING */
 
-void valuac_(integer v)
+void valuac_(v)
+integer v;
 {
    /* Local variables */
    logical f;

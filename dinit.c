@@ -127,11 +127,12 @@ logical init_()
    more_output("");
    more_output("As he grabs you by the neck all grows dim about you.");
    exit_();
+
+L10000:
 #endif
 
    /* NOW START INITIALIZATION PROPER */
 
-L10000:
    ret_val = FALSE_;
    /* 						!ASSUME INIT FAILS. */
    mmax = 1050;
@@ -442,9 +443,7 @@ L1950:
 #ifdef DEBUG
    more_output(NULL);
    printf("I can't open %s.\n", TEXTFILE);
-#endif
 L1975:
-#ifdef DEBUG
    more_output("Suddenly a sinister, wraithlike figure appears before you,");
    more_output("seeming to float in the air.  In a low, sorrowful voice he says,");
    more_output("\"Alas, the very nature of the world has changed, and the dungeon");

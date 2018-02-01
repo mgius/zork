@@ -136,7 +136,9 @@ integer adv;
 
 /* DECLARATIONS */
 
-void princo_(integer obj, integer desc)
+void princo_(obj, desc)
+integer obj;
+integer desc;
 {
    /* Local variables */
    integer i;

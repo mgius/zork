@@ -7,7 +7,8 @@
 
 /* GTTIME-- GET TOTAL TIME PLAYED */
 
-void gttime_(integer *t)
+void gttime_(t)
+integer *t;
 {
    integer h, m, s;
 
@@ -23,7 +24,10 @@ void gttime_(integer *t)
 
 /* DECLARATIONS */
 
-logical opncls_(integer obj, integer so, integer sc)
+logical opncls_(obj, so, sc)
+integer obj;
+integer so;
+integer sc;
 {
    /* System generated locals */
    logical ret_val;
@@ -70,7 +74,8 @@ L200:
 
 /* DECLARATIONS */
 
-logical lit_(integer rm)
+logical lit_(rm)
+integer rm;
 {
    /* System generated locals */
    logical ret_val;
@@ -133,10 +138,13 @@ L1000:
 
 /* DECLARATIONS */
 
-integer weight_(integer rm, integer cn, integer ad)
+integer weight_(rm, cn, ad)
+integer rm;
+integer cn;
+integer ad;
 {
    /* System generated locals */
-   integer ret_val, i__1;
+   integer ret_val;
 
    /* Local variables */
    integer i, j;

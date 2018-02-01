@@ -147,7 +147,12 @@ void fightd_()
 
 /* DECLARATIONS */
 
-integer blow_(integer h, integer v, integer rmk, integer hflg, integer out)
+integer blow_(h, v, rmk, hflg, out)
+integer h;
+integer v;
+integer rmk;
+integer hflg;
+integer out;
 {
    /* Initialized data */
 
